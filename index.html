@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SINGLES</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <style>
+        :root {
+            --pico-primary: #ff6600;
+            --pico-primary-hover: #e65c00;
+            --pico-background-color: #0d1117;
+            --pico-form-element-focus-color: rgba(255, 102, 0, 0.25);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--pico-primary);
+        }
+
+        article {
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 4px solid var(--pico-primary);
+        }
+
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <article>
+
+        <h1>Entrar</h1>
+
+        <form action="feed.html">
+            <label for="email">
+                E-mail
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+            </label>
+
+            <label for="senha">
+                Senha
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required>
+            </label>
+
+            <button type="submit">Acessar Sistema</button>
+        </form>
+
+        <p>
+            <a href="cadastro.html">Criar novo usuário</a>
+        </p>
+        <p>
+            <a href="#" class="secondary">Esqueceu sua senha?</a>
+        </p>
+    </article>
+</main>
+
+</body>
+</html>

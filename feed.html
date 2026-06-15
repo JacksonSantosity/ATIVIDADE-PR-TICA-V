@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - Single</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <style>
+        :root {
+            --pico-primary: #ff6600;
+            --pico-primary-hover: #e65c00;
+            --pico-background-color: #0d1117;
+            --pico-card-background-color: #161b22;
+        }
+
+        .usuario {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 2px solid var(--pico-primary);
+            object-fit: cover;
+        }
+
+        .acoes {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        .acoes span {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .acoes span:hover {
+            color: var(--pico-primary);
+        }
+
+        nav {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 1rem;
+        }
+        
+        article {
+            border: 1px solid #30363d;
+            box-shadow: none;
+        }
+        
+        /* Estilo para a imagem de cabeçalho */
+        .imagem-cabecalho {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid #30363d;
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+
+    <nav>
+        <ul>
+            <li><strong style="color: var(--pico-primary); font-size: 1.2rem;">SINGLES</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="secondary">Início</a></li>
+            <li><a href="#" class="secondary">Buscar</a></li>
+            <li><a href="#" class="secondary">Perfil</a></li>
+            <li><a href="index.html" role="button" class="outline">Sair</a></li>
+        </ul>
+    </nav>
+    
+    <img src="img/imagem-cabecalho.jpg" alt="Cabeçalho da Comunidade" class="imagem-cabecalho">
+    
+    <article style="border-top: 3px solid var(--pico-primary);">
+        <h2>Novo Post</h2>
+
+        <div class="usuario">
+            <img class="avatar" src="img/avatar.jpg" alt="Avatar">
+            <div>
+                <strong>Jackson</strong><br>
+                <small style="color: var(--pico-primary);">@admin</small>
+            </div>
+        </div>
+
+        <textarea rows="3" placeholder="O que vamos atualizar hoje?"></textarea>
+
+        <button>Publicar</button>
+    </article>
+
+    <h2 style="margin-top: 2rem;">Feed da Comunidade</h2>
+
+    <article>
+        <div class="usuario">
+            <img class="avatar" src="img/avatar.jpg" alt="Avatar">
+            <div>
+                <strong>Roberto Carlos</strong><br>
+                <small>@robertoclos</small>
+            </div>
+        </div>
+
+        <p>A atualização do servidor ficou sensacional. Mal posso esperar pelo próximo evento!</p>
+
+        <div class="acoes">
+            <span>❤️ 25</span>
+            <span>💬 8</span>
+            <span>🔁 Compartilhar</span>
+        </div>
+    </article>
+
+    <article>
+        <div class="usuario">
+            <img class="avatar" src="img/avatar.jpg" alt="Avatar">
+            <div>
+                <strong>Jardel Santos</strong><br>
+                <small>@jardellsts</small>
+            </div>
+        </div>
+
+        <p>Alguém online para testar as novas mecânicas de combate?</p>
+
+        <div class="acoes">
+            <span>❤️ 42</span>
+            <span>💬 15</span>
+            <span>🔁 Compartilhar</span>
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>

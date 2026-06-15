@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - SINGLES</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <style>
+        :root {
+            --pico-primary: #ff6600;
+            --pico-primary-hover: #e65c00;
+            --pico-background-color: #0d1117;
+            --pico-form-element-focus-color: rgba(255, 102, 0, 0.25);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        article {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 4px solid var(--pico-primary);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+
+    <article>
+        <h1>Criar Conta</h1>
+
+        <form action="index.html">
+
+            <div class="grid">
+                <label for="nome">
+                    Nome Completo
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </label>
+
+                <label for="username">
+                    Username
+                    <input type="text" id="username" name="username" placeholder="@usuario" required>
+                </label>
+            </div>
+
+            <label for="email">
+                E-mail
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </label>
+
+            <div class="grid">
+                <label for="senha">
+                    Senha
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                </label>
+
+                <label for="confirmarSenha">
+                    Confirmar Senha
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Repita a senha" required>
+                </label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+        <p style="text-align: center; margin-top: 1rem;">
+            Já possui uma conta? <a href="index.html">Fazer login</a>
+        </p>
+
+    </article>
+
+</main>
+
+</body>
+</html>

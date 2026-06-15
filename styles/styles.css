@@ -1,0 +1,63 @@
+/* Container principal - define a largura máxima da rede social */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+/* Espaçamento do cabeçalho */
+nav {
+    margin-bottom: 2rem;
+}
+
+/* Layout da área do usuário (Foto + Nome/Username) */
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+/* Estilização da foto de perfil (Avatar) */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cor sutil para o @username */
+.username {
+    color: gray;
+    font-size: 0.875em;
+}
+
+/* Área de digitação do novo post */
+textarea {
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+/* Layout dos ícones de curtida e comentário */
+.acoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Responsividade exigida pela atividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .acoes {
+        justify-content: space-around;
+    }
+}
